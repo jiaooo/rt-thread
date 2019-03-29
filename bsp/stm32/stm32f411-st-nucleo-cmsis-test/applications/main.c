@@ -14,7 +14,6 @@
 
 /* defined the LED0 pin: PA5 */
 #define LED0_PIN               GET_PIN(A, 5)
-extern int thread_main(void);
 
 int main(void)
 {
@@ -23,7 +22,7 @@ int main(void)
     rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
     rt_kprintf(">>>>>11.36\n");
 //    printf("thread1 run:\n");
-    //thread_main();
+
 
     while (count++)
     {
